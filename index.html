@@ -16,38 +16,48 @@
             <h1 id="odin-text">Odin</h1>
         </div>
 
-        <h1 id="credit-image">Photo Credits to Su Young</h1>
+        <h1 id="credit-image">Photo Credits to Halie West</h1>
 
     </div>
     
     <div class="container">
         <div class="header">
-            This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+            <div class="header-text">
+                <p>This is not a real online service! You know you need something 
+                    like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
 
-            <p>You know you want to.</p>
+                <p>You know you want to.</p>
+
+            </div>
 
         </div>
 
         <div class="main-page">
-            <p>lets do this!</p>
+            <p>Lets do this!</p>
             <form>
-                <label for="first-name">First Name</label>
+                <label for="first-name">First Name
                 <input type="text" name="first-name" id="first-name">
+                </label>
 
-                <label for="last-name">Last Name</label>
+                <label for="last-name">Last Name
                 <input type="text" name="last-name" id="last-name">
+                </label>
 
-                <label for="email">Email</label>
+                <label for="email">Email
                 <input type="email" name="email" id="email">
+                </label>
 
-                <label for="phone-number">Phone</label>
+                <label for="phone-number">Phone
                 <input type="tel" name="phone-number" id="phone-number">
+                </label>
 
-                <label for="password">Password</label>
+                <label for="password">Password
                 <input type="password" name="password" id="password">
+                </label>
 
-                <label for="confirm-password">Confirm Password</label>
+                <label for="confirm-password">Confirm Password
                 <input type="password" name="confirm-password" id="confirm-password" required oninput="check(this)">
+                </label>
             
             </form>
 
@@ -55,7 +65,7 @@
         </div>
 
         <div class="footer">
-            <button type="submit">Submit</button>
+            <button type="submit">Create Account</button>
 
             <div>Already have an account?
 
@@ -67,6 +77,11 @@
     </div>
 
     <script>
+        const pw = document.getElementById('password');
+        const pwc = document.getElementById('confirm-password');
+        const tel = document.getElementById('phone-number');
+        const email = document.getElementById('email');
+
         function check(input) {
             if (input.value != document.getElementById('password').value) {
                 input.setCustomValidity('Passwords do not match');
