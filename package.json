@@ -1,0 +1,24 @@
+{
+  "name": "forms-odin",
+  "version": "1.0.0",
+  "description": "Open Sans Variable Font =======================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csiokos/forms-odin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csiokos/forms-odin/issues"
+  },
+  "homepage": "https://github.com/csiokos/forms-odin#readme",
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}

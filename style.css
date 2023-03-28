@@ -91,7 +91,7 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color: white;
-    padding: 1.2rem 2vw 3rem 2vw;
+    padding: 1.2rem 2vw 0 2vw;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123); 
 }
 
@@ -127,6 +127,9 @@ input {
     border: 1px solid rgb(224, 224, 224);
     font-size: .9rem;
     margin-top: 3px;
+    margin-bottom: 25px;
+    position: relative;
+
 }
   
 a {
@@ -146,8 +149,42 @@ button[type='submit'] {
     margin-bottom: 10px;
 }
 
+button[type='submit']:hover {
+    background-color: rgb(13, 107, 35);
+  }
+
 .footer {
     margin-top: 2rem;
+}
+
+input:focus {
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+    outline: none;
+}
+  
+input:invalid:focus {
+    border: 2px solid rgb(255, 69, 100)
+}
+  
+input:valid:focus {
+    border: rgb(18, 115, 57) 2px solid;
+}
+
+.error {
+    font-family: customFont;
+    font-size: .9rem;
+    color: rgb(255, 69, 100);
+    position: absolute;
+    bottom: 0;
+}
+
+#password-label{
+    margin-bottom: 30px;
+}
+
+#password{
+    margin-bottom: 60px;
 }
 
   
